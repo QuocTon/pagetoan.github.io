@@ -1,0 +1,67 @@
+/* Chỉnh sửa thêm cho phần header */
+header {
+    background-color: var(--dark-bg);
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Phần menu */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+/* Chỉnh sửa phần profile */
+.profile-info p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Thêm hover effect cho các card */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Thêm hiệu ứng cho phần skill */
+.skill-bar {
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.skill-level {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+/* Thêm màu sắc cho mỗi mức độ kỹ năng */
+.skill-level {
+    background-color: var(--primary-color);
+}
+
+.skill-bar .skill-level[data-level="75%"] {
+    background-color: #66bb6a; /* Màu cho mức 75% */
+}
+
+.skill-bar .skill-level[data-level="50%"] {
+    background-color: #ff9800; /* Màu cho mức 50% */
+}
+
+.skill-bar .skill-level[data-level="25%"] {
+    background-color: #f44336; /* Màu cho mức 25% */
+}
